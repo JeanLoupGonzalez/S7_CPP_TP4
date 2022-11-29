@@ -1,4 +1,4 @@
-"G:\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S G:\CLionProjects\S7_CPP_TP4 -B G:\CLionProjects\S7_CPP_TP4\cmake-build-debug
+"G:\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=G:/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S "C:\Users\Jean Loup\CLionProjects\S7_CPP_TP4_git" -B "C:\Users\Jean Loup\CLionProjects\S7_CPP_TP4_git\cmake-build-debug"
 -- Configuring done
 -- Generating done
--- Build files have been written to: G:/CLionProjects/S7_CPP_TP4/cmake-build-debug
+-- Build files have been written to: C:/Users/Jean Loup/CLionProjects/S7_CPP_TP4_git/cmake-build-debug

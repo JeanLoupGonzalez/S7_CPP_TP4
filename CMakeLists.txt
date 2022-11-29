@@ -3,4 +3,4 @@ project(S7_CPP_TP3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(S7_CPP_TP3 main.cpp Document.cpp Livre.cpp Article.cpp)
+add_executable(S7_CPP_TP4.git main.cpp Document.cpp Livre.cpp Article.cpp Biblio.cpp Biblio.h)
