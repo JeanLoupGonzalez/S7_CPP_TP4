@@ -1,0 +1,3 @@
+"G:\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\S7_CPP_TP3.dir/objects.a
+G:\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\S7_CPP_TP3.dir/objects.a @CMakeFiles\S7_CPP_TP3.dir\objects1.rsp
+G:\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\S7_CPP_TP3.dir/objects.a -Wl,--no-whole-archive -o S7_CPP_TP3.exe -Wl,--out-implib,libS7_CPP_TP3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\S7_CPP_TP3.dir\linklibs.rsp
