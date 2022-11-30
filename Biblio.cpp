@@ -4,14 +4,19 @@
 
 #include "Biblio.h"
 
-void Biblio::ajoutDoc(Document doc) {
-
+Biblio::Biblio() {
 }
 
-void Biblio::rechercheDoc(string titre) {
+void Biblio::ajoutDoc(Document *doc) {
+    this->tab.push_front(*doc);
+}
+
+string Biblio::rechercheDoc(string titre) {
 
 }
 
 void Biblio::afficher() {
-
+    for (list<Document>::iterator it = this->tab.begin(); it != this->tab.end(); it++)
+        it->afficher();
 }
+

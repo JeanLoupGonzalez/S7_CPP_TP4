@@ -11,11 +11,13 @@ using namespace std;
 
 
 class Biblio {
-    list <Document> list;
+    list <Document> tab;
 public:
-    void ajoutDoc(Document doc);
+    Biblio();
 
-    void rechercheDoc(string titre);
+    void ajoutDoc(Document *doc);
+
+    string rechercheDoc(string titre);
 
     void afficher();
 

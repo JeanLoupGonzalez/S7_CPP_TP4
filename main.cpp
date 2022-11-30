@@ -5,6 +5,7 @@ using namespace std;
 #include "Document.h"
 #include "Livre.h"
 #include "Article.h"
+#include "Biblio.h"
 
 int main() {
 
@@ -122,6 +123,10 @@ int main() {
     article1.afficher();
     cout << "\n" << endl;
 
+    Biblio biblio;
+    biblio.afficher();
+    biblio.ajoutDoc(new Document (doc3));
+    biblio.afficher();
 
     return 0;
 }
