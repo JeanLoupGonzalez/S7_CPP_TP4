@@ -3,3 +3,15 @@
 //
 
 #include "Biblio.h"
+
+void Biblio::ajoutDoc(Document doc) {
+
+}
+
+void Biblio::rechercheDoc(string titre) {
+
+}
+
+void Biblio::afficher() {
+
+}
