@@ -18,6 +18,7 @@ protected:
     string auteur;
 
 public:
+    virtual void calculCout() = 0;
 
     //constructeurs
     Document(string &titre, string *resume, string auteur);

@@ -7,20 +7,19 @@
 Biblio::Biblio() {
 }
 
-void Biblio::ajoutDoc(Document *doc) {
+void Biblio::ajouter(Document *doc) {
     this->tab.push_back(*doc);
 }
 
-Document Biblio::rechercheDoc(const string &titre) {
+Document Biblio::rechercher(const string &titre) {
     for (list<Document>::iterator it = this->tab.begin(); it != this->tab.end(); it++){
         if(it->titre==titre){
-            cout<<"entree de le if"<<endl;
-            //return *it;
+            cout<<"Document trouve"<<endl;
+            return *it;
         }
-        cout<<"ds le for"<<endl;
     }
     cout<<"Aucun titre correspondant trouve\n"<<endl;
-    return Document();
+    return this->tab.front();
 }
 
 void Biblio::afficher() {
@@ -37,4 +36,5 @@ void Biblio::afficher() {
     }
 
 }
+
 

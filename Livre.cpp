@@ -22,6 +22,7 @@ void Livre::afficher() {
     cout << "\n" << endl;
 }
 
+
 Livre *Livre::clonage() {
     Livre *ptr = new Livre(*this);
     return ptr;

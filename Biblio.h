@@ -15,9 +15,9 @@ class Biblio {
 public:
     Biblio();
 
-    void ajoutDoc(Document *doc);
+    void ajouter(Document *doc);
 
-    Document rechercheDoc(const string &titre);
+    Document rechercher(const string &titre);
 
     void afficher();
 
