@@ -25,6 +25,7 @@ void Document::afficher() {
     cout << "Titre : " << this->titre << endl;
     cout << "Auteur : " << this->auteur << endl;
     cout << "Resume : " << *(this->resume) << endl;
+    cout << "\n" << endl;
 }
 
 Document *Document::clonage() {

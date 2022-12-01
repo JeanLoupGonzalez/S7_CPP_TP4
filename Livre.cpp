@@ -19,6 +19,7 @@ void Livre::afficher() {
     Document::afficher();
     cout << "Editeur : " << this->editeur << endl;
     cout << "Annee de parution : " << this->anneeParu << endl;
+    cout << "\n" << endl;
 }
 
 Livre *Livre::clonage() {

@@ -14,6 +14,7 @@ void Article::afficher() {
     cout << "Titre de la revue : " << this->titreRevue << endl;
     cout << "Editeur : " << this->editeur << endl;
     cout << "Numero edition : " << this->numero << endl;
+    cout << "\n" << endl;
 }
 
 Article *Article::clonage() {

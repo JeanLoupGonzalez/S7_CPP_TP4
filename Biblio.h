@@ -17,7 +17,7 @@ public:
 
     void ajoutDoc(Document *doc);
 
-    string rechercheDoc(string titre);
+    Document rechercheDoc(const string &titre);
 
     void afficher();
 

@@ -36,7 +36,7 @@ public:
 
     //2e façon de faire
     //donne acces a Livre aux attributs prives de Document
-    //friend class Livre;
+    friend class Biblio;
 };
 
 
