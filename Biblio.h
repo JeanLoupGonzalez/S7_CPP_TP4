@@ -7,17 +7,18 @@
 
 #include "Document.h"
 #include <list>
+
 using namespace std;
 
 
 class Biblio {
-    list <Document> tab;
+    list<Document *> tab;
 public:
     Biblio();
 
     void ajouter(Document *doc);
 
-    Document rechercher(const string &titre);
+    Document *rechercher(const string &titre);
 
     void afficher();
 

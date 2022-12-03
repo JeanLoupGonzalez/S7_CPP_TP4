@@ -18,11 +18,13 @@ public:
 
     Article(const Article &a);
 
-    void afficher();
+    void afficher() override;
+
+    int coutDoc() override;
 
     Article *clonage();
 
-    Article& operator=(const Article &a2);
+    Article &operator=(const Article &a2);
 
 };
 

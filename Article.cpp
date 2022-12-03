@@ -39,3 +39,7 @@ Article::Article(const Article &a) : Document(a.titre, a.resume, a.auteur),
                                      editeur(a.editeur), numero(a.numero), titreRevue(a.titreRevue) {
 
 }
+
+int Article::coutDoc() {
+    return 5;
+}

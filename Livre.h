@@ -16,11 +16,14 @@ public:
 
     Livre(const Livre &l);
 
-    void afficher();
+    void afficher() override;
 
-    Livre* clonage();
+    Livre *clonage();
 
-    Livre& operator=(const Livre &l2);
+    int coutDoc() override;
+
+
+    Livre &operator=(const Livre &l2);
 
 };
 

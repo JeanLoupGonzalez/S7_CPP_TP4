@@ -8,27 +8,11 @@ using namespace std;
 #include "Biblio.h"
 
 int main() {
-    //TODO test ce pb de reference copiee qui modifie la valeur a des moments non voulus
-
-    cout << "//creation + affichage de doc1:" << endl;
-    string titreDoc1 = "rapport sur le climat";
-    string resumeDoc1 = "ca va mal";
-    string *ptrResumeDoc1 = &resumeDoc1;
-    Document doc1(titreDoc1, ptrResumeDoc1, "Jean-Jacques Levert");
-    doc1.afficher();
-    cout << "\n" << endl;
-
     cout << "//test classe Biblio" << endl;
     cout << "//Creation d'une bibliotheque de Documents + affichage" << endl;
     Biblio biblio;
 
     cout << "//on tente d'afficher une bibliotheque vide:" << endl;
-    biblio.afficher();
-    cout << "\n" << endl;
-
-    cout << "//ajout d'un doc avec biblio.ajout(new Document (doc1));" << endl;
-    biblio.ajouter(new Document(doc1));
-    cout << "//biblio.afficher(); :" << endl;
     biblio.afficher();
     cout << "\n" << endl;
 
@@ -52,12 +36,26 @@ int main() {
     biblio.ajouter(new Article(article1));
     biblio.afficher();
 
-    cout<<"//test de biblio.rechercher(""zrtpq"") :"<<endl;
+    cout << "//test de biblio.rechercher(""zrtpq"") :" << endl;
     biblio.rechercher("zrtpq");
-    cout<<"//test de biblio.rechercher(""Le livre de la jungle"") :"<<endl;
+    cout << "//test de biblio.rechercher(""Le livre de la jungle"") :" << endl;
     biblio.rechercher("Le livre de la jungle");
+    cout << "//quand doc trouve, renvoit un pointeur vers ce document" << endl;
+    cout << "\n" << endl;
+
+    cout << "//test de biblio.rechercher(""Les humains auront 6 doigts d ici quelques siecles"") :" << endl;
+    biblio.rechercher("Les humains auront 6 doigts d ici quelques siecles");
+    cout << "\n" << endl;
 
 
+    cout << "//Test de la fonction de cout" << endl;
+    cout << "//livre1.coutDoc()" << endl;
+    cout << livre1.coutDoc() << endl;
+    cout << "\n" << endl;
+
+    cout << "//article1.coutDoc()" << endl;
+    cout << article1.coutDoc() << endl;
+    cout << "\n" << endl;
 
     return 0;
 }

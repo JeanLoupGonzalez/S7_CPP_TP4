@@ -25,19 +25,19 @@ void Document::afficher() {
     cout << "Titre : " << this->titre << endl;
     cout << "Auteur : " << this->auteur << endl;
     cout << "Resume : " << *(this->resume) << endl;
-    cout << "\n" << endl;
 }
 
+/*
 Document *Document::clonage() {
     //crée un pointeur vers une copie du document à cloner
     Document *ptr = new Document(*this);
     return ptr;
-}
+}*/
 
 Document &Document::operator=(const Document &d2) {
-    if(this != &d2){
+    if (this != &d2) {
         this->titre = d2.titre;
-        this->resume =  new string (*d2.resume);
+        this->resume = new string(*d2.resume);
         this->auteur = d2.auteur;
     }
     return *this;

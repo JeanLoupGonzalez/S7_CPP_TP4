@@ -22,7 +22,6 @@ void Livre::afficher() {
     cout << "\n" << endl;
 }
 
-
 Livre *Livre::clonage() {
     Livre *ptr = new Livre(*this);
     return ptr;
@@ -39,4 +38,8 @@ Livre &Livre::operator=(const Livre &l2) {
         this->anneeParu = l2.anneeParu;
     }
     return *this;
+}
+
+int Livre::coutDoc() {
+    return 3;
 }

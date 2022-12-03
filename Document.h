@@ -18,7 +18,8 @@ protected:
     string auteur;
 
 public:
-    virtual void calculCout() = 0;
+    //transforme la classe en classe virtuelle pure (    =0     )
+    virtual int coutDoc() = 0;
 
     //constructeurs
     Document(string &titre, string *resume, string auteur);
@@ -29,9 +30,11 @@ public:
     ~Document();
 
     //methodes
-    void afficher();
+    virtual void afficher();
 
-    Document *clonage();
+    //ne doit pas exister ds une classe abstraite
+    //car on ne peut faire instancier un new Document!
+    //Document *clonage();
 
     Document &operator=(const Document &d2);
 
